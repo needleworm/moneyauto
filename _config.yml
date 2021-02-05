@@ -107,10 +107,6 @@ social:
   - title: github
     url: http://github.com/needleworm
 
-# Postal address (add as many lines as necessary)
-address:
-  - line: 3481 Melrose Place
-  - line: Beverly Hills, CA 90210
 
 # Build settings
 markdown: kramdown
