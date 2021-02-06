@@ -4,17 +4,21 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <img src="img/logos/coinauto-01.png"/>
-                    <h2 class="section-subheading text-muted">암호화폐 자동 매매 시스템</h2>
-                    
-                    <a href="https://github.com/needleworm/CoinAutoTrader_exe/archive/master.zip" >
-                        <button id="my-form-submit-button" class="btn btn-xl">Download for windows</button>
-                    </a>
+                    <p>
+                        <h2 class="section-subheading text-muted">암호화폐 자동 매매 시스템</h2>
+                    </p><br/><br/>
+                    <p>
+                        <a href="https://github.com/needleworm/CoinAutoTrader_exe/archive/master.zip" >
+                            <button id="my-form-submit-button" class="btn btn-xl">Download for windows</button>
+                        </a>
+                    </p>
                 </div>
             </div>
             <div class="row" id="functionIntroduceGrid">
-                <H3>사용방법</H3>
+                <img src="img/logos/coinone.png" style="height:100px;"/>
+                <H3>코인원 자동거래 사용방법</H3>
                 {% for post in site.posts %}
-                    {% if post.category == "coinauto" %}
+                    {% if post.category == "coinauto-coinone" %}
                         <div class="col-md-4 col-sm-6 portfolio-item">
                             <a href="#portfolioModal{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
                                 <div class="portfolio-hover">
@@ -31,12 +35,34 @@
                         </div>
                     {% endif %}
                 {% endfor %}
-
-                
+            </div>
+            
+            <div class="row" id="functionIntroduceGrid">
+                <img src="img/logos/bithumb.png" style="height:100px;"/>
+                <H3>빗썸 자동거래 사용방법</H3>
+                {% for post in site.posts %}
+                    {% if post.category == "coinauto-bithumb" %}
+                        <div class="col-md-4 col-sm-6 portfolio-item">
+                            <a href="#portfolioModal{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content">
+                                        <i class="fa fa-plus fa-3x"></i>
+                                    </div>
+                                </div>
+                                <img src="img/coinauto/{{ post.thumbnail }}" class="img-responsive img-centered" alt="">
+                            </a>
+                            <div class="portfolio-caption">
+                                <h4>{{ post.title }}</h4>
+                                <p class="text-muted">{{ post.subtitle }}</p>
+                            </div>
+                        </div>
+                    {% endif %}
+                {% endfor %}
             </div>
             <div>
             <h3 id="patchnoteTitle">Coin AUTO 패치노트</h3>
             <ul>
+                <li><a href="https://moneyauto.tistory.com/3">v1.1.0 패치노트</a></li>
                 <li><a href="https://moneyauto.tistory.com/2">v1.0.1 패치노트</a></li>
                 <li><a href="https://moneyauto.tistory.com/1">v1.0.0 Relese</a></li>
             </ul>
