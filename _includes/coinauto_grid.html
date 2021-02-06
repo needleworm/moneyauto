@@ -14,53 +14,49 @@
                     </p>
                 </div>
             </div>
+            <hr/>
             <div class="row" id="functionIntroduceGrid">
-                <img src="img/logos/coinone.png" style="height:100px;"/>
-                <H3>코인원 자동거래 사용방법</H3>
-                <p>아래 항목을 클릭하시면 상세 설명이 제공됩니다.</p>
+                <div style="text-align:center; padding-bottom:80px;">
+                    <img src="img/logos/coinone.png" style="height:100px;"/>
+                    <H3>코인원 자동거래 사용방법</H3>
+                    <p>아래 항목을 클릭하시면 상세 설명이 제공됩니다.</p>
+                </div>
                 {% for post in site.posts %}
                     {% if post.category == "coinauto-coinone" %}
                         <div class="col-md-4 col-sm-6 portfolio-item">
                             <a href="#portfolioModal{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
-                                        <i class="fa fa-plus fa-3x"></i>
-                                    </div>
-                                </div>
                                 <img src="img/coinauto/{{ post.thumbnail }}" class="img-responsive img-centered" alt="">
                             </a>
-                            <div class="portfolio-caption">
+                            <div class="portfolio-caption" style="text-align:center;">
                                 <h4>{{ post.title }}</h4>
-                                <p class="text-muted">{{ post.subtitle }}</p>
+                                <p class="text-muted" style="padding-bottom:40px;">{{ post.subtitle }}</p>
                             </div>
                         </div>
                     {% endif %}
                 {% endfor %}
             </div>
-            
+            <hr/>
             <div class="row" id="functionIntroduceGrid">
-                <img src="img/logos/bithumb.png" style="height:100px;"/>
-                <H3>빗썸 자동거래 사용방법</H3>
-                <p>아래 항목을 클릭하시면 상세 설명이 제공됩니다.</p>
+                <div style="text-align:center; padding-bottom:80px;">
+                    <img src="img/logos/bithumb.png" style="height:100px;"/>
+                    <H3>빗썸 자동거래 사용방법</H3>
+                    <p>아래 항목을 클릭하시면 상세 설명이 제공됩니다.</p>
+                </div>
                 {% for post in site.posts %}
                     {% if post.category == "coinauto-bithumb" %}
                         <div class="col-md-4 col-sm-6 portfolio-item">
                             <a href="#portfolioModal{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content">
-                                        <i class="fa fa-plus fa-3x"></i>
-                                    </div>
-                                </div>
                                 <img src="img/coinauto/{{ post.thumbnail }}" class="img-responsive img-centered" alt="">
                             </a>
-                            <div class="portfolio-caption">
+                            <div class="portfolio-caption" style="text-align:center;">
                                 <h4>{{ post.title }}</h4>
-                                <p class="text-muted">{{ post.subtitle }}</p>
+                                <p class="text-muted" style="padding-bottom:40px;">{{ post.subtitle }}</p>
                             </div>
                         </div>
                     {% endif %}
                 {% endfor %}
             </div>
+            <hr/>
             <div>
             <h3 id="patchnoteTitle">Coin AUTO 패치노트</h3>
             <ul>
