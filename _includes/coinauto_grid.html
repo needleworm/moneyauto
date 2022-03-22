@@ -1,0 +1,61 @@
+<!-- Coinauto Grid Section -->
+    <section id="coinauto" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <img src="https://cdn.jsdelivr.net/gh/needleworm/moneyauto/img/logos/coinauto-01.png"/>
+                    <p>
+                        <h2 class="section-subheading text-muted">암호화폐 자동 매매 시스템</h2>
+                        <p>주의사항을 숙지하여 주시기 바랍니다.<br/>
+                        머니오토는 어떠한 금전적 손실도 책임지지 않습니다.<br/>
+                        프로그램 매매로 인한 모든 손익은 사용자의 책임입니다.
+                        </p>
+                    </p><br/><br/>
+                    <p>
+                        <a href="https://github.com/needleworm/CoinAutoTrader_exe/raw/master/Coin%20AUTO.exe" >
+                            <button id="my-form-submit-button" class="btn btn-xl"><i class="fa fa-windows"></i>&nbsp Windows</button>
+                        </a>&nbsp 
+                        <a href="https://github.com/needleworm/coinauto_mac/archive/refs/heads/main.zip" >
+                            <button id="my-form-submit-button" class="btn btn-xl"><i class="fa fa-apple"></i>&nbsp Mac</button>
+                        </a>&nbsp 
+                        <a href="https://github.com/needleworm/coinautoTrader" >
+                            <button id="my-form-submit-button" class="btn btn-xl"><i class="fa fa-code"></i>&nbsp Source</button>
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <hr/>
+            <div class="row" id="functionIntroduceGrid">
+                <div style="text-align:center; padding-bottom:80px;">
+                    <img src="https://cdn.jsdelivr.net/gh/needleworm/moneyauto/img/logos/coinone.png" style="height:100px;"/>
+                    <H3>코인원 자동거래 사용방법</H3>
+                    <p>아래 항목을 클릭하시면 상세 설명이 제공됩니다.</p>
+                </div>
+                {% for post in site.posts %}
+                    {% if post.category == "coinauto-coinone" %}
+                        <div class="col-md-4 col-sm-6 portfolio-item">
+                            <a href="#portfolioModal{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
+                                <img src="https://cdn.jsdelivr.net/gh/needleworm/moneyauto/img/coinauto/{{ post.thumbnail }}" class="img-responsive img-centered" alt="">
+                            </a>
+                            <div class="portfolio-caption" style="text-align:center;">
+                                <h4>{{ post.title }}</h4>
+                                <p class="text-muted" style="padding-bottom:40px;">{{ post.subtitle }}</p>
+                            </div>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+            <hr/>
+            
+            <div class="col-lg-12 text-center">
+                <h3 id="patchnoteTitle">Coin AUTO 패치노트</h3>
+                <ul>
+                    <li><a href="https://moneyauto.tistory.com/4">v1.1.1 패치노트</a></li>
+                    <li><a href="https://moneyauto.tistory.com/3">v1.1.0 패치노트</a></li>
+                    <li><a href="https://moneyauto.tistory.com/2">v1.0.1 패치노트</a></li>
+                    <li><a href="https://moneyauto.tistory.com/1">v1.0.0 Relese</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

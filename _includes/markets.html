@@ -1,0 +1,34 @@
+<!-- markets -->
+<section id="markets" >
+    <div class="container" style="text-align:center;">
+      <h3>
+        연동 가능 거래소 / 증권사
+      </h3>
+      <div class="row" {% if site.data.marketlist.markets.horizontal-scrolling == "yes" %} id="scrolling-clients" {% endif %}><br/><br/><br/>
+        {% for market in site.data.marketlist.markets.list %}
+            <div class="col-md-3 col-sm-6">
+              <a href="{{ market.url }}"  target="_blank">
+                <img class="img-fluid d-block mx-auto" src="https://cdn.jsdelivr.net/gh/needleworm/moneyauto/{{ market.logo }}" alt="{{ market.title }}" style="height:40px;">
+              </a>
+            </div>
+        {% endfor %}
+      </div>
+    </div><br/><br/><br/>
+    <div class="container" style="text-align:center;">
+      <h3>
+        현재 개발중
+      </h3>
+      <div class="row" ><br/><br/><br/>
+          <div class="col-md-3 col-sm-6">
+            <a href="https://www.kiwoom.com" target="_blank">
+              <img class="img-fluid d-block mx-auto" src="https://cdn.jsdelivr.net/gh/needleworm/moneyauto/img/markets_dev/kiwoom.png" alt="키움증권" style="height:40px;">
+            </a>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <a href="https://www.bithumb.com/" target="_blank">
+              <img class="img-fluid d-block mx-auto" src="https://cdn.jsdelivr.net/gh/needleworm/moneyauto/img/markets/bithumb.png" alt="빗썸" style="height:40px;">
+            </a>
+          </div>
+      </div>
+    </div>
+  </section>
